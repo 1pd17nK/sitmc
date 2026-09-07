@@ -48,7 +48,7 @@ const directMembers: Member[] = [
     ign: 'mrastv',
     role: '建筑顾问',
     roles: ['建筑顾问', '方案设计'],
-    school: 'SITMC',
+    school: 'HBUT',
     qq: '368849291',
     avatarColor: 'linear-gradient(135deg, #e879f9, #d946ef)'
   },
