@@ -18,7 +18,7 @@ interface Line {
   textColor?: string
   bgLight: string
   category: 'SITMC' | 'MUC'
-  status: '运营中' | '建设中' | '规划中'
+  status: '运营中' | '建设中' | '规划中' | '未完成'
   description?: string
   stations: Station[]
 }
@@ -171,7 +171,7 @@ const lines: Line[] = [
     textColor: '#0f172a',
     bgLight: 'rgba(56, 189, 248, 0.12)',
     category: 'SITMC',
-    status: '运营中',
+    status: '未完成',
     description: '主世界核心骨干线，涵盖南支线、主线与北直通线，直达星萤庄园及公司分部。',
     stations: [
       { name: '小各-东南前哨站（南域火车站）', enName: '(Xiaoge-) SouthEast Outpost (Southern Railway Station)', transfers: ['前哨站环线', '南部联合线', '海川线'] },
@@ -260,6 +260,30 @@ const currentLine = computed(() => {
   return lines.find(l => l.id === activeLineId.value) || lines[0]
 })
 
+const getLineStationCount = (line: Line): number => {
+  let count = 0
+  for (const st of line.stations) {
+    count++
+    if (st.subStations && st.subStations.length) {
+      count += st.subStations.length
+    }
+  }
+  return count
+}
+
+const getLineSubStationCount = (line: Line): number => {
+  let count = 0
+  for (const st of line.stations) {
+    if (st.subStations && st.subStations.length) {
+      count += st.subStations.length
+    }
+  }
+  return count
+}
+
+const currentLineTotalStations = computed(() => getLineStationCount(currentLine.value))
+const currentLineSubStations = computed(() => getLineSubStationCount(currentLine.value))
+
 const selectLine = (id: string) => {
   activeLineId.value = id
 }
@@ -302,7 +326,14 @@ const selectLine = (id: string) => {
           {{ line.code }}
         </span>
         <span class="line-chip-name">{{ line.name }}</span>
-        <span class="status-dot" :class="line.status === '运营中' ? 'active' : 'building'"></span>
+        <span 
+          class="status-dot" 
+          :class="{
+            'active': line.status === '运营中',
+            'building': line.status === '建设中',
+            'uncompleted': line.status === '未完成'
+          }"
+        ></span>
       </button>
     </div>
 
@@ -317,7 +348,14 @@ const selectLine = (id: string) => {
             <span class="line-tag-code" :style="{ backgroundColor: currentLine.color, color: currentLine.textColor || '#fff' }">
               {{ currentLine.code }}
             </span>
-            <span class="status-badge" :class="currentLine.status === '运营中' ? 'badge-active' : 'badge-building'">
+            <span 
+              class="status-badge" 
+              :class="{
+                'badge-active': currentLine.status === '运营中',
+                'badge-building': currentLine.status === '建设中',
+                'badge-uncompleted': currentLine.status === '未完成'
+              }"
+            >
               {{ currentLine.status }}
             </span>
             <span class="category-badge">{{ currentLine.category === 'SITMC' ? '本服路网' : 'MUA 联盟' }}</span>
@@ -328,8 +366,9 @@ const selectLine = (id: string) => {
         </div>
         <div class="line-stat-card">
           <div class="stat-item">
-            <span class="stat-num">{{ currentLine.stations.length }}</span>
+            <span class="stat-num">{{ currentLineTotalStations }}</span>
             <span class="stat-label">站点数</span>
+            <span v-if="currentLineSubStations > 0" class="stat-sub-hint">含 {{ currentLineSubStations }} 分支站</span>
           </div>
         </div>
       </div>
@@ -498,6 +537,11 @@ const selectLine = (id: string) => {
   box-shadow: 0 0 6px #f59e0b;
 }
 
+.status-dot.uncompleted {
+  background-color: #f43f5e;
+  box-shadow: 0 0 6px #f43f5e;
+}
+
 /* Detail Card */
 .line-detail-card {
   position: relative;
@@ -549,6 +593,11 @@ const selectLine = (id: string) => {
 .badge-building {
   background: rgba(245, 158, 11, 0.15);
   color: #f59e0b;
+}
+
+.badge-uncompleted {
+  background: rgba(244, 63, 94, 0.15);
+  color: #f43f5e;
 }
 
 .category-badge {
@@ -608,6 +657,13 @@ const selectLine = (id: string) => {
 .stat-label {
   font-size: 0.75rem;
   color: var(--vp-c-text-2);
+}
+
+.stat-sub-hint {
+  font-size: 0.72rem;
+  color: var(--vp-c-text-3);
+  margin-top: 0.2rem;
+  white-space: nowrap;
 }
 
 /* Route Map */

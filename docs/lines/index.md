@@ -19,7 +19,7 @@ SITMC 铁道交通建设无限公司自成立以来，致力于在 Minecraft 服
 | **SL** | 短道速线 (SITMC NetherMetro Line 5) | ⚪ 淡灰 | 幻想庄园、荒地、聚落直达 | 运营中 |
 | **CCC** | 内环观光线 (SITMC NetherMetro Line 6) | 🟢 黄绿 | 主城外围、星萤岛、永恒之地 | 运营中 |
 | **OL** | 海川线 (SITMC MainMetro Line 7) | 🔵 深蓝 | 主世界海洋、西南工业区、东延伸段 | 运营中 |
-| **PL** | 河晏线 (SITMC MainMetro Line 8) | 🔷 淡蓝 | 南支线、主线、北直通线、公司分部 | 运营中 |
+| **PL** | 河晏线 (SITMC MainMetro Line 8) | 🔷 淡蓝 | 南支线、主线、北直通线、公司分部 | 未完成 |
 | **HLL** | 六角环线 (SITMC NetherMetro Line 9) | 💠 青色 | 下界南域外环 | 建设中 |
 | **TL** | 橙圆线 (SUESMC NetherMetro Line 11) | 🟠 橙色 | SUESMC 高校联道合作线 | 建设中 |
 | **KL** | 奶牛线 (NENUMC MainMetro Line 12) | 🟤 灰黄 | NENUMC 高校联道合作线 | 运营中 |
