@@ -101,9 +101,10 @@
 1.1.6.11	永恒之地（直通）
 1.1.6.12	星萤庄园
 1.1.6.13	星萤岛
-1.1.6.14	小各-东北前哨站
-1.1.6.15	SITMC铁道建设公司分部（直通）
-1.1.6.16	Bailiの家
+1.1.6.14	暖冰岛
+1.1.6.15	小各-东北前哨站
+1.1.6.16	SITMC铁道建设公司分部（直通）
+1.1.6.17	Bailiの家
 1.1.7	六角环线（SITMC NetherMetro Line 9：Hexagonal Loop Line）【HLL】：
 1.1.7.1	Sakanaの家北站
 1.1.7.2	Sakanaの家南站
@@ -119,6 +120,7 @@
 1.2.2.6	塱上
 1.2.2.7	伊甸生物圈
 1.2.2.8	海军船坞
+1.2.2.9	MO仪
 铁道成果展示厅：
 SITMC系列：
 前哨站环线（SITMC NetherMetro Line 3：Outpost Loop Line）【OLL】：
@@ -559,6 +561,9 @@ Stella Island
 
 可换乘：二号线（Un_connect），内环观光线，地狱联络线（Yagamiko）
 
+暖冰岛
+Thermoglacial Island
+
 小各-东北前哨站
 （Xiaoge-）NorthEast Outpost
 
@@ -628,5 +633,8 @@ Biosphere Paradise
 
 海军船坞
 Naval Dockyard
+
+MO仪
+MO instrument
 
 社区内容除另有注明外，均在CC-BY-SA许可协议下提供。

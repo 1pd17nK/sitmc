@@ -187,6 +187,7 @@ const lines: Line[] = [
       { name: '永恒之地（直通）', enName: 'Eternal Land', transfers: ['海川线', '内环观光线'] },
       { name: '星萤庄园', enName: 'Stella Estate', transfers: ['二号线 (规划)', '三号线 (规划)'] },
       { name: '星萤岛', enName: 'Stella Island', transfers: ['二号线 (规划)', '内环观光线', '地狱联络线'] },
+      { name: '暖冰岛', enName: 'Thermoglacial Island' },
       { name: '小各-东北前哨站', enName: '(Xiaoge-) NorthEast Outpost', transfers: ['前哨站环线'] },
       { name: 'SITMC铁道建设公司分部（直通）', enName: 'SITMC Railway Construction Company Branch', transfers: ['橙圆线 (SUESMC)', '奶牛线 (NENUMC)'] },
       { name: 'Bailiの家', enName: "Baili's Home" }
@@ -242,7 +243,8 @@ const lines: Line[] = [
       { name: '楉日岛', enName: 'Prosperity Island' },
       { name: '塱上', enName: 'Wetland' },
       { name: '伊甸生物圈', enName: 'Biosphere Paradise' },
-      { name: '海军船坞', enName: 'Naval Dockyard' }
+      { name: '海军船坞', enName: 'Naval Dockyard' },
+      { name: 'MO仪', enName: 'MO instrument' }
     ]
   }
 ]

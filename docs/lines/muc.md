@@ -32,6 +32,7 @@ MUAlliance（MUAlliance Cooperation）系列线路是 SITMC 铁道交通建设�
 6. **塱上** / *Wetland*
 7. **伊甸生物圈** / *Biosphere Paradise*
 8. **海军船坞** / *Naval Dockyard*
+9. **MO仪** / *MO instrument*
 
 ---
 
