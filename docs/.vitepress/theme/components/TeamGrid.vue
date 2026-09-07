@@ -27,7 +27,7 @@ const directMembers: Member[] = [
     name: '苦小怕',
     ign: 'KuLiPaid',
     role: '核心开发',
-    roles: ['网站开发', '基础设施与系统研发'],
+    roles: ['开发'],
     school: 'JNU',
     qq: '3290675192',
     avatarColor: 'linear-gradient(135deg, #f43f5e, #fb7185)',
@@ -282,6 +282,8 @@ const partnerMembers: Member[] = [
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
   transition: all 0.25s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
 }
@@ -363,15 +365,14 @@ const partnerMembers: Member[] = [
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--vp-c-brand-1);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .roles-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin-bottom: 1rem;
-  flex: 1;
+  margin-bottom: 0.6rem;
 }
 
 .role-chip {
@@ -384,6 +385,7 @@ const partnerMembers: Member[] = [
 }
 
 .card-footer {
+  margin-top: auto;
   padding-top: 0.75rem;
   border-top: 1px solid var(--vp-c-divider);
   display: flex;

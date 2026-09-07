@@ -24,8 +24,8 @@ features:
     title: 浩瀚路网体系
     details: 覆盖主世界深海群岛与下界枢纽要塞，规划并建成 7 大骨干干线与环线，实现多线无缝换乘与双向快通。
   - icon: 🌐
-    title: MUC 高校联道
-    details: 积极推进 MUlliance 跨服互联工程，联合 SUESMC、NENUMC 等高校生存服拓展交通版图。
+    title: MUA 高校联盟
+    details: 积极推进 MUAlliance 跨服互联工程，联合 SUESMC、NENUMC 等高校生存服拓展交通版图。
   - icon: 🏛️
     title: 站台建筑美学
     details: 融合红石生电技术与环境艺术设计，每一座换乘大厅与前哨站台均倾注匠心设计。

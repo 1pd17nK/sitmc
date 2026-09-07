@@ -1,6 +1,6 @@
-# MUC 跨服联道工程
+# MUA 高校联盟线路工程
 
-MUC（MUlliance Cooperation）系列线路是 SITMC 铁道交通建设无限公司与 MUA 旗下高校生存服联合推进的跨界交通工程。
+MUAlliance（MUAlliance Cooperation）系列线路是 SITMC 铁道交通建设无限公司与 MUA 旗下高校生存服联合推进的跨界交通工程。
 
 ---
 

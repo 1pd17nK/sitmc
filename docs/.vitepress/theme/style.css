@@ -10,48 +10,67 @@
   position: relative;
 }
 
-/* Circular soft glow matching the round contour of the logo */
+/* Center Hero Image perfectly */
+.VPHero .image {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 .VPHero .image-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  transform: none !important;
+  margin: 0 auto !important;
 }
 
-.VPHero .image-container::before {
-  content: '';
-  position: absolute;
-  width: 290px;
-  height: 290px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(244, 114, 182, 0.32) 0%, rgba(251, 182, 206, 0.2) 55%, rgba(243, 229, 151, 0.12) 75%, transparent 100%);
-  filter: blur(14px);
-  z-index: 0;
-  pointer-events: none;
+@media (min-width: 960px) {
+  .VPHero .image-container {
+    transform: none !important;
+  }
 }
 
-/* Logo Slow Rotation & Glowing Filter */
-@keyframes logoSlowSpin {
+/* Circular soft glow perfectly matching the round contour of the logo */
+.VPHero .image-bg {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 290px !important;
+  height: 290px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.35) 0%, rgba(251, 182, 206, 0.22) 55%, rgba(243, 229, 151, 0.12) 75%, transparent 100%) !important;
+  filter: blur(14px) !important;
+  pointer-events: none !important;
+}
+
+/* Hover-only rotation animation around center */
+@keyframes logoHoverSpin {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
 .VPHero .image-src {
-  position: relative;
-  z-index: 1;
-  border-radius: 50%;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  transform-origin: center center !important;
+  border-radius: 50% !important;
   filter: drop-shadow(0 0 14px rgba(236, 72, 153, 0.42));
-  animation: logoSlowSpin 30s linear infinite;
-  transform-origin: center center;
   transition: filter 0.3s ease;
 }
 
+/* Rotate ONLY on hover, stays static otherwise */
 .VPHero .image-src:hover {
-  filter: drop-shadow(0 0 24px rgba(236, 72, 153, 0.65));
+  animation: logoHoverSpin 6s linear infinite;
+  filter: drop-shadow(0 0 24px rgba(236, 72, 153, 0.68));
 }
 
 /* Hero Title Gradient (Cake Axolotl Pink & Cream Gold) */

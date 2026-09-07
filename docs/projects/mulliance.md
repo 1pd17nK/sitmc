@@ -1,6 +1,6 @@
-# 联道计划 (MUlliance Cooperation)
+# 联道计划 (MUAlliance Cooperation)
 
-**联道项目（MUlliance Cooperation，简称 MUC）** 是由 SITMC 铁道交通建设无限公司发起的高校生存服轨道互联互助倡议。
+**联道项目（MUAlliance Cooperation）** 是由 SITMC 铁道交通建设无限公司发起的高校生存服轨道互联互助倡议。
 
 ---
 

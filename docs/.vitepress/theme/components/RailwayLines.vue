@@ -218,7 +218,7 @@ const lines: Line[] = [
     bgLight: 'rgba(249, 115, 22, 0.12)',
     category: 'MUC',
     status: '建设中',
-    description: 'MUC 联道项目合作线路，连接 SUESMC 生存服与 SITMC 铁道分部。',
+    description: 'MUA 高校联盟合作线路，连接 SUESMC 生存服与 SITMC 铁道分部。',
     stations: [
       { name: 'SITMC铁道建设公司分部', enName: 'SITMC Railway Construction Company Branch', transfers: ['河晏线 (SITMC)', '奶牛线 (NENUMC)'] }
     ]
@@ -233,7 +233,7 @@ const lines: Line[] = [
     bgLight: 'rgba(217, 119, 6, 0.12)',
     category: 'MUC',
     status: '运营中',
-    description: 'MUC 联道项目主世界线路，连接 NENUMC 生存服各大工业基地与 SITMC 铁道分部。',
+    description: 'MUA 高校联盟主世界合作线路，连接 NENUMC 生存服各大工业基地与 SITMC 铁道分部。',
     stations: [
       { name: '福居', enName: 'Fukuju' },
       { name: '卡电园', enName: 'E-Card Zone' },
@@ -281,7 +281,7 @@ const selectLine = (id: string) => {
         <button 
           :class="['tab-btn', { active: activeCategory === 'MUC' }]" 
           @click="activeCategory = 'MUC'"
-        >MUC 跨服联道 (2)</button>
+        >MUA 高校联盟 (2)</button>
       </div>
     </div>
 
@@ -320,7 +320,7 @@ const selectLine = (id: string) => {
             <span class="status-badge" :class="currentLine.status === '运营中' ? 'badge-active' : 'badge-building'">
               {{ currentLine.status }}
             </span>
-            <span class="category-badge">{{ currentLine.category === 'SITMC' ? '本服路网' : '高校联道' }}</span>
+            <span class="category-badge">{{ currentLine.category === 'SITMC' ? '本服路网' : 'MUA 联盟' }}</span>
           </div>
           <h2 class="line-title">{{ currentLine.name }}</h2>
           <div class="line-full-name">{{ currentLine.fullName }}</div>
