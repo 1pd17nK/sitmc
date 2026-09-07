@@ -8,12 +8,12 @@
 
 SITMC 铁道交通建设无限公司 ➔ **MUA 各高校生存服**：
 
-| 高校 / 联盟代号 | 高校全称 | 当前合作阶段 | 合作对应线路 |
-| :--- | :--- | :--- | :--- |
-| **SUESMC** | 上海工程技术大学 | 建设推进中 | [橙圆线 (SUESMC Line 11)](/lines/muc#1-橙圆线-tangerine-line-tl) |
-| **NENUMC** | 东北师范大学 | 正式通车运营 | [奶牛线 (NENUMC Line 12)](/lines/muc#2-奶牛线-klim-line-kl) |
-| **DUT** | 大连理工大学 | 待启动合作 | 规划方案研讨中 |
-| **JSUMC** | 江苏大学 | 待启动合作 | 规划方案研讨中 |
+| 高校代号 | 当前合作阶段 | 合作对应线路 |
+| :--- | :--- | :--- |
+| **SUESMC** | 建设推进中 | [橙圆线 (SUESMC Line 11)](/lines/muc#1-橙圆线-tangerine-line-tl) |
+| **NENUMC** | 正式通车运营 | [奶牛线 (NENUMC Line 12)](/lines/muc#2-奶牛线-klim-line-kl) |
+| **DUT** | 待启动合作 | 规划方案研讨中 |
+| **JSUMC** | 待启动合作 | 规划方案研讨中 |
 
 ---
 

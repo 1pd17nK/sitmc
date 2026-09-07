@@ -5,7 +5,7 @@ interface Member {
   role: string
   roles: string[]
   school: string
-  schoolTag: string
+  qq?: string
   avatarColor: string
   isLeader?: boolean
   isSpecial?: boolean
@@ -18,9 +18,9 @@ const directMembers: Member[] = [
     ign: 'Xiaoge0801',
     role: 'SITMC 铁道公司老板',
     roles: ['公司老板', '铁道装修员', '站台装修员', '后勤', '财务', '铁道图片制作'],
-    school: '上海应用技术大学 SITMC',
-    schoolTag: 'SITMC',
-    avatarColor: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
+    school: 'SITMC',
+    qq: '3212270471',
+    avatarColor: 'linear-gradient(135deg, #ec4899, #f472b6)',
     isLeader: true
   },
   {
@@ -28,9 +28,9 @@ const directMembers: Member[] = [
     ign: 'KuLiPaid',
     role: '核心开发',
     roles: ['网站开发', '基础设施与系统研发'],
-    school: '暨南大学 JNU',
-    schoolTag: 'JNU',
-    avatarColor: 'linear-gradient(135deg, #8b5cf6, #ec4899)',
+    school: 'JNU',
+    qq: '3290675192',
+    avatarColor: 'linear-gradient(135deg, #f43f5e, #fb7185)',
     isSpecial: true
   },
   {
@@ -38,18 +38,26 @@ const directMembers: Member[] = [
     ign: 'Meaning',
     role: '公司吉祥物',
     roles: ['吉祥物', '企业文化形象'],
-    school: '上海应用技术大学 SITMC',
-    schoolTag: 'SITMC',
-    avatarColor: 'linear-gradient(135deg, #f59e0b, #ef4444)',
+    school: 'SITMC',
+    qq: '2533501126',
+    avatarColor: 'linear-gradient(135deg, #f59e0b, #ec4899)',
     isSpecial: true
+  },
+  {
+    name: 'mrastv',
+    ign: 'mrastv',
+    role: '建筑顾问',
+    roles: ['建筑顾问', '方案设计'],
+    school: 'SITMC',
+    qq: '368849291',
+    avatarColor: 'linear-gradient(135deg, #e879f9, #d946ef)'
   },
   {
     name: '魔法猫咪',
     ign: 'Magic_cat_SITMC',
     role: '生电技术专家（退休）',
     roles: ['后勤', '生电技术人员（退休）'],
-    school: '上海应用技术大学 SITMC',
-    schoolTag: 'SITMC',
+    school: 'SITMC',
     avatarColor: 'linear-gradient(135deg, #10b981, #059669)',
     status: '荣誉退休'
   },
@@ -58,17 +66,17 @@ const directMembers: Member[] = [
     ign: 'A_Meng',
     role: '安保与宣传委员',
     roles: ['安保保障', '公司宣传员'],
-    school: '东北农业大学 NEAUMC',
-    schoolTag: 'NEAUMC',
-    avatarColor: 'linear-gradient(135deg, #3b82f6, #6366f1)'
+    school: 'NEAUMC',
+    qq: '206352912',
+    avatarColor: 'linear-gradient(135deg, #38bdf8, #818cf8)'
   },
   {
     name: '水银',
     ign: 'Hgfddddds_MUA',
     role: '工程管家与安保',
     roles: ['后勤', '财务', '安保', '铁道装修员'],
-    school: '天津大学 TJUMC',
-    schoolTag: 'TJUMC',
+    school: 'TJUMC',
+    qq: '1580232197',
     avatarColor: 'linear-gradient(135deg, #64748b, #475569)'
   },
   {
@@ -76,8 +84,8 @@ const directMembers: Member[] = [
     ign: 'Let_me_see_see',
     role: '站台装修与建筑顾问',
     roles: ['站台装修', '建筑美学顾问'],
-    school: '上海应用技术大学 SITMC',
-    schoolTag: 'SITMC',
+    school: 'SITMC',
+    qq: '3849722908',
     avatarColor: 'linear-gradient(135deg, #14b8a6, #0d9488)'
   },
   {
@@ -85,17 +93,17 @@ const directMembers: Member[] = [
     ign: 'skydj233',
     role: '宣传与视觉审核',
     roles: ['公司宣传员', '图片审核员'],
-    school: '上海应用技术大学 SITMC',
-    schoolTag: 'SITMC',
-    avatarColor: 'linear-gradient(135deg, #f97316, #ea580c)'
+    school: 'SITMC',
+    qq: '2669622368',
+    avatarColor: 'linear-gradient(135deg, #fb923c, #ea580c)'
   },
   {
     name: '诺冰',
     ign: 'Norice',
     role: '站台装修员（毕业）',
     roles: ['站台装修员（毕业）'],
-    school: '上海应用技术大学 SITMC',
-    schoolTag: 'SITMC',
+    school: 'SITMC',
+    qq: '1728561263',
     avatarColor: 'linear-gradient(135deg, #0284c7, #0369a1)',
     status: '已毕业'
   },
@@ -104,8 +112,8 @@ const directMembers: Member[] = [
     ign: 'beifeng',
     role: '后勤保障',
     roles: ['后勤物资供应'],
-    school: '上海应用技术大学 SITMC',
-    schoolTag: 'SITMC',
+    school: 'SITMC',
+    qq: '298426171',
     avatarColor: 'linear-gradient(135deg, #84cc16, #65a30d)'
   }
 ]
@@ -116,8 +124,8 @@ const partnerMembers: Member[] = [
     ign: 'MCyoucaijun',
     role: 'SUESMC 联道甲方对接',
     roles: ['橙圆线工程推进', '高校生存服对接'],
-    school: '上海工程技术大学 SUESMC',
-    schoolTag: 'SUESMC',
+    school: 'SUESMC',
+    qq: '2598631649',
     avatarColor: 'linear-gradient(135deg, #f97316, #f59e0b)'
   },
   {
@@ -125,8 +133,8 @@ const partnerMembers: Member[] = [
     ign: 'Lisztelly',
     role: 'NENUMC 联道甲方对接',
     roles: ['奶牛线工程推进', '高校生存服对接'],
-    school: '东北师范大学 NENUMC',
-    schoolTag: 'NENUMC',
+    school: 'NENUMC',
+    qq: '2377407132',
     avatarColor: 'linear-gradient(135deg, #eab308, #ca8a04)'
   }
 ]
@@ -147,8 +155,21 @@ const partnerMembers: Member[] = [
         :class="{ 'leader-card': m.isLeader }"
       >
         <div class="card-top">
-          <div class="member-avatar" :style="{ background: m.avatarColor }">
-            {{ m.name.charAt(0) }}
+          <div class="member-avatar-box">
+            <img 
+              v-if="m.qq" 
+              :src="`https://q2.qlogo.cn/headimg_dl?dst_uin=${m.qq}&spec=100`" 
+              :alt="m.name"
+              class="member-avatar-img"
+              loading="lazy"
+            />
+            <div 
+              v-else 
+              class="member-avatar-fallback" 
+              :style="{ background: m.avatarColor }"
+            >
+              {{ m.name.charAt(0) }}
+            </div>
           </div>
           <div class="member-info">
             <div class="name-row">
@@ -166,8 +187,7 @@ const partnerMembers: Member[] = [
         </div>
 
         <div class="card-footer">
-          <span class="school-tag">🏫 {{ m.schoolTag }}</span>
-          <span class="school-full">{{ m.school }}</span>
+          <span class="school-tag">🏫 所属高校：{{ m.school }}</span>
         </div>
       </div>
     </div>
@@ -184,8 +204,21 @@ const partnerMembers: Member[] = [
         class="member-card partner-card"
       >
         <div class="card-top">
-          <div class="member-avatar" :style="{ background: m.avatarColor }">
-            {{ m.name.charAt(0) }}
+          <div class="member-avatar-box">
+            <img 
+              v-if="m.qq" 
+              :src="`https://q2.qlogo.cn/headimg_dl?dst_uin=${m.qq}&spec=100`" 
+              :alt="m.name"
+              class="member-avatar-img"
+              loading="lazy"
+            />
+            <div 
+              v-else 
+              class="member-avatar-fallback" 
+              :style="{ background: m.avatarColor }"
+            >
+              {{ m.name.charAt(0) }}
+            </div>
           </div>
           <div class="member-info">
             <span class="member-name">{{ m.name }}</span>
@@ -200,8 +233,7 @@ const partnerMembers: Member[] = [
         </div>
 
         <div class="card-footer">
-          <span class="school-tag">🏫 {{ m.schoolTag }}</span>
-          <span class="school-full">{{ m.school }}</span>
+          <span class="school-tag">🏫 所属高校：{{ m.school }}</span>
         </div>
       </div>
     </div>
@@ -257,12 +289,12 @@ const partnerMembers: Member[] = [
 .member-card:hover {
   transform: translateY(-3px);
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 10px 24px rgba(6, 182, 212, 0.15);
+  box-shadow: 0 10px 24px rgba(236, 72, 153, 0.16);
 }
 
 .leader-card {
-  border-color: rgba(6, 182, 212, 0.5);
-  background: linear-gradient(to bottom right, var(--vp-c-bg-elv), rgba(6, 182, 212, 0.05));
+  border-color: rgba(236, 72, 153, 0.4);
+  background: linear-gradient(to bottom right, var(--vp-c-bg-elv), rgba(236, 72, 153, 0.04));
 }
 
 .card-top {
@@ -272,18 +304,33 @@ const partnerMembers: Member[] = [
   margin-bottom: 0.9rem;
 }
 
-.member-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+.member-avatar-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.15);
+  flex-shrink: 0;
+  border: 2px solid var(--vp-c-brand-soft);
+  background: var(--vp-c-bg-soft);
+}
+
+.member-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.member-avatar-fallback {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  flex-shrink: 0;
 }
 
 .name-row {
@@ -340,18 +387,13 @@ const partnerMembers: Member[] = [
   padding-top: 0.75rem;
   border-top: 1px solid var(--vp-c-divider);
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  align-items: center;
 }
 
 .school-tag {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: var(--vp-c-text-1);
-}
-
-.school-full {
-  font-size: 0.72rem;
-  color: var(--vp-c-text-3);
+  color: var(--vp-c-brand-1);
+  font-family: monospace;
 }
 </style>

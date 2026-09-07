@@ -6,7 +6,7 @@ export default defineConfig({
   description: '致力于铺设更多便民的 Minecraft 铁道铁路 · MUA-SITMC 旗下交通建设机构',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
-    ['meta', { name: 'theme-color', content: '#0284c7' }],
+    ['meta', { name: 'theme-color', content: '#ec4899' }],
     ['meta', { property: 'og:title', content: 'SITMC 铁道交通建设无限公司' }],
     ['meta', { property: 'og:description', content: 'SITMC 铁道交通建设无限公司官方网站与知识库' }],
     ['meta', { property: 'og:image', content: '/logo.png' }]

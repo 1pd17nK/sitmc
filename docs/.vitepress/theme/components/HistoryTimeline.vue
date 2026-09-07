@@ -39,7 +39,7 @@ const logs: LogEntry[] = [
     badge: '重大里程碑',
     badgeType: 'primary',
     events: [
-      { lineTag: '公司大事记', lineColor: '#06b6d4', text: '🎉 2026.1.8：SITMC 铁道交通建设无限公司正式成立！', isHighlight: true },
+      { lineTag: '公司大事记', lineColor: '#ec4899', text: '🎉 2026.1.8：SITMC 铁道交通建设无限公司正式成立！', isHighlight: true },
       { lineTag: '前哨站环线', lineColor: '#a855f7', text: '设立「SITMC 铁道建设公司总部站」；前哨站环线二期全线完成，末地站站台竣工！' },
       { lineTag: '南部联合线', lineColor: '#eab308', text: '南部联合线二期全线完成！设立北支线（黏土山中转站—稀草中转站），改换换乘线：平原中转站—平原露营地—Meaningの家。' },
       { lineTag: '短道速线', lineColor: '#94a3b8', text: '短道速线二期计划提交，动线建设启动。' },
@@ -152,7 +152,7 @@ const selectedTag = ref<string>('ALL')
   top: 10px;
   bottom: 10px;
   width: 2px;
-  background: linear-gradient(to bottom, #06b6d4, #a855f7, #3b82f6, #64748b);
+  background: linear-gradient(to bottom, #ec4899, #f472b6, #fb7185, #f59e0b);
   border-radius: 2px;
 }
 
@@ -173,8 +173,8 @@ const selectedTag = ref<string>('ALL')
   height: 14px;
   border-radius: 50%;
   background: var(--vp-c-bg);
-  border: 3px solid #06b6d4;
-  box-shadow: 0 0 10px rgba(6, 182, 212, 0.7);
+  border: 3px solid #ec4899;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.6);
   z-index: 2;
 }
 
@@ -189,8 +189,8 @@ const selectedTag = ref<string>('ALL')
 
 .timeline-card:hover {
   transform: translateX(4px);
-  border-color: #06b6d4;
-  box-shadow: 0 8px 30px rgba(6, 182, 212, 0.12);
+  border-color: #ec4899;
+  box-shadow: 0 8px 30px rgba(236, 72, 153, 0.14);
 }
 
 .card-header {
@@ -214,7 +214,7 @@ const selectedTag = ref<string>('ALL')
   font-family: monospace;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #06b6d4;
+  color: #ec4899;
   display: none;
 }
 
@@ -226,9 +226,9 @@ const selectedTag = ref<string>('ALL')
 }
 
 .badge-primary {
-  background: rgba(6, 182, 212, 0.15);
-  color: #06b6d4;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  background: rgba(236, 72, 153, 0.15);
+  color: #ec4899;
+  border: 1px solid rgba(236, 72, 153, 0.3);
 }
 
 .badge-success {
@@ -259,10 +259,10 @@ const selectedTag = ref<string>('ALL')
 }
 
 .event-highlight {
-  background: rgba(6, 182, 212, 0.08);
+  background: rgba(236, 72, 153, 0.08);
   padding: 0.6rem 0.8rem;
   border-radius: 8px;
-  border-left: 3px solid #06b6d4;
+  border-left: 3px solid #ec4899;
   color: var(--vp-c-text-1);
   font-weight: 600;
 }

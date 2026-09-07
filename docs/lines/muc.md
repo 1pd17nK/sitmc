@@ -6,7 +6,7 @@ MUC（MUlliance Cooperation）系列线路是 SITMC 铁道交通建设无限公�
 
 ## 1. 橙圆线（Tangerine Line）【TL】
 * **官方代号**：SUESMC NetherMetro Line 11
-* **合作高校**：上海工程技术大学（SUESMC）
+* **合作高校**：SUESMC
 * **颜色标识**：`🟠 橙色`
 * **工程现状**：建设中
 * **主要枢纽**：
@@ -17,7 +17,7 @@ MUC（MUlliance Cooperation）系列线路是 SITMC 铁道交通建设无限公�
 
 ## 2. 奶牛线（Klim Line）【KL】
 * **官方代号**：NENUMC MainMetro Line 12
-* **合作高校**：东北师范大学（NENUMC）
+* **合作高校**：NENUMC
 * **颜色标识**：`🟤 灰黄色`
 * **工程现状**：已通车运营
 * **工程特征**：主世界跨区工业与生态景观廊道，串联卡电园、楉日岛与海军船坞。

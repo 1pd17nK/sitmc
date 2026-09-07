@@ -434,7 +434,7 @@ const selectLine = (id: string) => {
   background: var(--vp-c-brand-1);
   color: #ffffff;
   font-weight: 600;
-  box-shadow: 0 2px 10px rgba(6, 182, 212, 0.35);
+  box-shadow: 0 2px 10px rgba(236, 72, 153, 0.35);
 }
 
 .line-selector {
@@ -509,15 +509,6 @@ const selectLine = (id: string) => {
   overflow: hidden;
 }
 
-.line-detail-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--active-color);
-}
 
 .line-detail-header {
   display: flex;
