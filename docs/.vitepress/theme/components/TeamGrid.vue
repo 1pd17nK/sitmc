@@ -58,6 +58,7 @@ const directMembers: Member[] = [
     role: '生电技术专家（退休）',
     roles: ['后勤', '生电技术人员（退休）'],
     school: 'SITMC',
+    qq: '2512364714',
     avatarColor: 'linear-gradient(135deg, #10b981, #059669)',
     status: '荣誉退休'
   },
