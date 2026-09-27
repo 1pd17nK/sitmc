@@ -116,6 +116,15 @@ const directMembers: Member[] = [
     school: 'SITMC',
     qq: '298426171',
     avatarColor: 'linear-gradient(135deg, #84cc16, #65a30d)'
+  },
+  {
+    name: '哈基灯',
+    ign: 'Yuuh1',
+    role: '铁道装修',
+    roles: ['铁道装修'],
+    school: 'SITMC',
+    qq: '986272663',
+    avatarColor: 'linear-gradient(135deg, #84cc16, #65a30d)'
   }
 ]
 
@@ -149,26 +158,12 @@ const partnerMembers: Member[] = [
     </h3>
 
     <div class="members-grid">
-      <div 
-        v-for="m in directMembers" 
-        :key="m.ign" 
-        class="member-card"
-        :class="{ 'leader-card': m.isLeader }"
-      >
+      <div v-for="m in directMembers" :key="m.ign" class="member-card" :class="{ 'leader-card': m.isLeader }">
         <div class="card-top">
           <div class="member-avatar-box">
-            <img 
-              v-if="m.qq" 
-              :src="`https://q2.qlogo.cn/headimg_dl?dst_uin=${m.qq}&spec=100`" 
-              :alt="m.name"
-              class="member-avatar-img"
-              loading="lazy"
-            />
-            <div 
-              v-else 
-              class="member-avatar-fallback" 
-              :style="{ background: m.avatarColor }"
-            >
+            <img v-if="m.qq" :src="`https://q2.qlogo.cn/headimg_dl?dst_uin=${m.qq}&spec=100`" :alt="m.name"
+              class="member-avatar-img" loading="lazy" />
+            <div v-else class="member-avatar-fallback" :style="{ background: m.avatarColor }">
               {{ m.name.charAt(0) }}
             </div>
           </div>
@@ -199,25 +194,12 @@ const partnerMembers: Member[] = [
     </h3>
 
     <div class="members-grid">
-      <div 
-        v-for="m in partnerMembers" 
-        :key="m.ign" 
-        class="member-card partner-card"
-      >
+      <div v-for="m in partnerMembers" :key="m.ign" class="member-card partner-card">
         <div class="card-top">
           <div class="member-avatar-box">
-            <img 
-              v-if="m.qq" 
-              :src="`https://q2.qlogo.cn/headimg_dl?dst_uin=${m.qq}&spec=100`" 
-              :alt="m.name"
-              class="member-avatar-img"
-              loading="lazy"
-            />
-            <div 
-              v-else 
-              class="member-avatar-fallback" 
-              :style="{ background: m.avatarColor }"
-            >
+            <img v-if="m.qq" :src="`https://q2.qlogo.cn/headimg_dl?dst_uin=${m.qq}&spec=100`" :alt="m.name"
+              class="member-avatar-img" loading="lazy" />
+            <div v-else class="member-avatar-fallback" :style="{ background: m.avatarColor }">
               {{ m.name.charAt(0) }}
             </div>
           </div>
