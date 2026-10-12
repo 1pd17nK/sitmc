@@ -64,7 +64,7 @@ const lines: Line[] = [
     status: '运营中',
     description: '下界南北走廊重要交通线，贯穿南域各大度假区、灵沙市区及西南中转站。',
     stations: [
-      { name: 'Sakanaの家北站', enName: "Sakana's North Home", transfers: ['六角环线'] },
+      { name: 'Sakana_の家', enName: "Sakana_'s Home", transfers: ['六角环线'] },
       { name: '小各-东南前哨站（南域火车站）', enName: '(Xiaoge-) SouthEast Outpost (Southern Railway Station)', transfers: ['前哨站环线', '海川线', '河晏线'] },
       { name: '黏土山中转站', enName: 'Clay Mountain Freight', transfers: ['前哨站环线', '河晏线'], subStations: [{ name: '稀草度假区', enName: 'Savanna Resort', transfers: ['前哨站环线', '海川线'] }] },
       { name: '平原中转站', enName: 'Plain Freight', transfers: ['前哨站环线', '海川线'], subStations: [{ name: '平原露营地', enName: 'Plain Campground', transfers: ['海川线'] }] },
@@ -88,6 +88,7 @@ const lines: Line[] = [
       { name: '短道速线换乘站', enName: 'Speed Line Transfer', transfers: ['前哨站环线'] },
       { name: '多草荒地', enName: 'Grassy Yssarg', transfers: ['海川线'] },
       { name: '少草荒地', enName: 'Wilderness Ground' },
+      { name: 'Noriceの家', enName: "Norice's Home" },
       { name: 'Enderperの家', enName: "Enderper's Home", transfers: ['海川线'] },
       { name: 'guanyimaiの墓', enName: "guanyimai's Grave" },
       { name: 'A_Mengの家', enName: "A_Meng's Home", transfers: ['海川线'] }
@@ -111,8 +112,8 @@ const lines: Line[] = [
       { name: '灵沙市区', enName: 'Lingsha Area', transfers: ['南部联合线'] },
       { name: '针杏原野森林', enName: 'Wilderness Forest' },
       { name: '星萤岛', enName: 'Stella Island', transfers: ['基 bedrock 联络线', '河晏线', '二号线 (规划)'] },
-      { name: '天空岛', enName: 'Skye Island' },
-      { name: 'Shangxiaoerの家南站', enName: "Shangxiaoer's South Home", transfers: ['河晏线'] },
+      { name: '天空岛', enName: 'Skye Island', transfers: ['河晏线'] },
+      { name: 'Shangxiaoerの家', enName: "Shangxiaoer's Home", transfers: ['河晏线'] },
       { name: '7_hanの家', enName: "7_han's Home" },
       { name: '北岸', enName: 'North Shore', transfers: ['基 bedrock 联络线', '一号线'] },
       { name: '主城站', enName: 'MainCity', transfers: ['主城-末地冰道', '基 bedrock 联络线', '一号线', '二号线 (规划)'] },
@@ -181,9 +182,10 @@ const lines: Line[] = [
       { name: '主城西', enName: 'West MainCity', transfers: ['海川线', '一号线'] },
       { name: 'Macroの家', enName: "Macro's Home", transfers: ['内环观光线', '基 bedrock 联络线'] },
       { name: 'JohnWongの家', enName: "JohnWong's Home", transfers: ['基 bedrock 联络线'] },
+      { name: '天空岛', enName: 'Skye Island', transfers: ['内环观光线'] },
       { name: '大风车', enName: 'Windmill' },
-      { name: 'Shangxiaoerの家南站', enName: "Shangxiaoer's South Home", transfers: ['内环观光线'] },
-      { name: 'Shangxiaoerの家北站', enName: "Shangxiaoer's North Home" },
+      { name: 'Shangxiaoerの家', enName: "Shangxiaoer's Home", transfers: ['内环观光线'] },
+      { name: 'LVALDEZの家', enName: "LVALDEZ's Home" },
       { name: '永恒之地（直通）', enName: 'Eternal Land', transfers: ['海川线', '内环观光线'] },
       { name: '星萤庄园', enName: 'Stella Estate', transfers: ['二号线 (规划)', '三号线 (规划)'] },
       { name: '星萤岛', enName: 'Stella Island', transfers: ['二号线 (规划)', '内环观光线', '地狱联络线'] },
@@ -205,8 +207,8 @@ const lines: Line[] = [
     status: '建设中',
     description: '下界六边形环形线路，规划连接南域与外围各站点。',
     stations: [
-      { name: 'Sakanaの家北站', enName: "Sakana's North Home", transfers: ['南部联合线'] },
-      { name: 'Sakanaの家南站', enName: "Sakana's South Home" }
+      { name: 'Sakana_の家', enName: "Sakana_'s Home", transfers: ['南部联合线'] },
+      { name: '樱之彼方', enName: 'Beyond Sakura' }
     ]
   },
   {
